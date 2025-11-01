@@ -1,0 +1,657 @@
+@charset "UTF-8";
+/* ========== Reset & Base Styles ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --red: #DD0000;
+    --gold: #FFCE00;
+    --white: #FFFFFF;
+    --gray-light: #F5F5F5;
+    --gray-dark: #333333;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --shadow-hover: 0 15px 50px rgba(221, 0, 0, 0.3);
+    /* Belgium Colors */
+    --belgium-black: #000000;
+    --belgium-yellow: #FDDA24;
+    --belgium-red: #EF3340;
+    /* Fun/Eentertainment Colors */
+    --fun-primary: #E94A7A; /* Darkened for better contrast */
+    --fun-secondary: #4ECDC4;
+    --fun-accent: #FFE66D;
+    /* Gradients */
+    --gradient-dual: linear-gradient(135deg, var(--black) 0%, var(--red) 20%, var(--belgium-red) 40%, var(--belgium-yellow) 70%, var(--gold) 100%);
+    --gradient-fun: linear-gradient(135deg, var(--fun-primary) 0%, var(--fun-secondary) 50%, var(--fun-accent) 100%);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--gradient-dual);
+    background-size: 400% 400%;
+    animation: gradientMove 30s ease infinite;
+    will-change: background-position;
+    color: var(--gray-dark);
+    direction: rtl;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ========== Header ========== */
+.header {
+    background: var(--gradient-dual);
+    padding: 3rem 0;
+    box-shadow: var(--shadow);
+    animation: slideDown 0.8s ease;
+    position: relative;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.22);
+    z-index: 0;
+    pointer-events: none;
+}
+.header .container, .header .welcome-banner, .header .main-title, .header .welcome-message, .header .subtitle {
+    position: relative;
+    z-index: 1;
+}
+.subtitle {
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.welcome-banner {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    animation: fadeInScale 1s ease;
+}
+
+.welcome-message {
+    font-size: 1.5rem;
+    color: var(--gold);
+    font-weight: 300;
+    background: rgba(255, 206, 0, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
+    animation: fadeInUp 1.2s ease;
+}
+
+/* ========== Search Section ========== */
+.search-section {
+    background: var(--white);
+    padding: 2rem 0;
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.search-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+}
+
+.search-group input,
+.search-group select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--gray-light);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.search-group input:focus,
+.search-group select:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(221, 0, 0, 0.1);
+}
+
+.reset-btn {
+    padding: 1rem 2rem;
+    background: var(--gradient-dual);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+}
+
+.reset-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+/* ========== Main Content ========== */
+.main-content {
+    padding: 2rem 0 4rem;
+}
+
+.places-count {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--gold);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 2.5rem;
+    animation: fadeIn 0.8s ease;
+}
+
+/* ========== Place Cards ========== */
+.place-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: fadeInUp 0.6s ease backwards;
+    will-change: transform;
+}
+
+.place-card:nth-child(1) { animation-delay: 0.1s; }
+.place-card:nth-child(2) { animation-delay: 0.2s; }
+.place-card:nth-child(3) { animation-delay: 0.3s; }
+.place-card:nth-child(4) { animation-delay: 0.4s; }
+.place-card:nth-child(5) { animation-delay: 0.5s; }
+
+.place-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Entertainment/Fun Place Cards */
+:is(
+    .place-card.fun,
+    .place-card[data-category*="ملاهي"],
+    .place-card[data-category*="حدائق ترفيهية"],
+    .place-card[data-category*="متنزهات"],
+    .place-card[data-category*="Zoo"],
+    .place-card[data-category*="حديقة الحيوان"],
+    .place-card[data-category*="حدائق حيوان"],
+    .place-card[data-category*="أكواريوم"]
+) {
+    border: 3px solid var(--fun-primary);
+    background: linear-gradient(to bottom, var(--white) 0%, rgba(233, 74, 122, 0.05) 100%);
+}
+:is(
+    .place-card.fun,
+    .place-card[data-category*="ملاهي"],
+    .place-card[data-category*="حدائق ترفيهية"],
+    .place-card[data-category*="متنزهات"],
+    .place-card[data-category*="Zoo"],
+    .place-card[data-category*="حديقة الحيوان"],
+    .place-card[data-category*="حدائق حيوان"],
+    .place-card[data-category*="أكواريوم"]
+):hover {
+    box-shadow: 0 20px 60px var(--fun-primary);
+    transform: translateY(-16px) scale(1.03);
+}
+:is(
+    .place-card.fun,
+    .place-card[data-category*="ملاهي"],
+    .place-card[data-category*="حدائق ترفيهية"],
+    .place-card[data-category*="متنزهات"],
+    .place-card[data-category*="Zoo"],
+    .place-card[data-category*="حديقة الحيوان"],
+    .place-card[data-category*="حدائق حيوان"],
+    .place-card[data-category*="أكواريوم"]
+) .place-title {
+    color: var(--fun-primary);
+}
+/*
+Icon rendering contract:
+- Each .place-card must set a data-category attribute (e.g., "ملاهي", "حدائق ترفيهية", "حدائق حيوان", "أكواريوم", "Zoo", "حديقة الحيوان", "متنزهات") for automatic icon mapping via CSS.
+- Alternatively, .place-category can set a data-icon attribute for custom icons.
+- Card generation logic should ensure one of these attributes is always present for correct icon display.
+*/
+.place-category[data-icon]::before {
+    content: attr(data-icon);
+    margin-inline-start: 0.5rem;
+    font-size: 1.2rem;
+}
+.place-card[data-category*="ملاهي"] .place-category:not([data-icon])::before { content: "🎢"; margin-inline-start: 0.5rem; }
+.place-card[data-category*="حدائق ترفيهية"] .place-category:not([data-icon])::before { content: "🎡"; margin-inline-start: 0.5rem; }
+.place-card[data-category*="حيوان"] .place-category:not([data-icon])::before { content: "🦁"; margin-inline-start: 0.5rem; }
+.place-card[data-category*="أكواريوم"] .place-category:not([data-icon])::before { content: "🐠"; margin-inline-start: 0.5rem; }
+.place-card[data-category*="Zoo"] .place-category:not([data-icon])::before { content: "🦁"; margin-inline-start: 0.5rem; }
+.place-card[data-category*="حديقة الحيوان"] .place-category:not([data-icon])::before { content: "🦁"; margin-inline-start: 0.5rem; }
+.place-card[data-category*="حدائق حيوان"] .place-category:not([data-icon])::before { content: "🦁"; margin-inline-start: 0.5rem; }
+.place-card[data-category*="متنزهات"] .place-category:not([data-icon])::before { content: "🎠"; margin-inline-start: 0.5rem; }
+:is(
+    .place-card.fun,
+    .place-card[data-category*="ملاهي"],
+    .place-card[data-category*="حدائق ترفيهية"],
+    .place-card[data-category*="متنزهات"],
+    .place-card[data-category*="Zoo"],
+    .place-card[data-category*="حديقة الحيوان"],
+    .place-card[data-category*="حدائق حيوان"],
+    .place-card[data-category*="أكواريوم"]
+) .place-city {
+    background: var(--gradient-fun);
+    color: #6B4F1D; /* Dark brown for better contrast on yellow accent */
+    text-shadow: 0 1px 6px rgba(0,0,0,0.25);
+}
+:is(
+    .place-card.fun,
+    .place-card[data-category*="ملاهي"],
+    .place-card[data-category*="حدائق ترفيهية"],
+    .place-card[data-category*="متنزهات"],
+    .place-card[data-category*="Zoo"],
+    .place-card[data-category*="حديقة الحيوان"],
+    .place-card[data-category*="حدائق حيوان"],
+    .place-card[data-category*="أكواريوم"]
+):hover .place-image {
+    animation: bounce 0.6s ease infinite;
+    transform: none;
+}
+
+.place-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+}
+
+.place-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.place-card:hover .place-image {
+    transform: scale(1.15);
+}
+
+.place-content {
+    padding: 2rem;
+}
+
+.place-title {
+    font-size: 2rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.place-city {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--black), var(--red));
+    color: var(--white);
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.place-card .place-city.dual-gradient {
+    background: var(--gradient-dual);
+    color: var(--white);
+}
+
+.place-description {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.place-category {
+    display: inline-block;
+    background: var(--gray-light);
+    color: #888;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* ========== No Results ========== */
+.no-results {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+/* ========== Footer ========== */
+.footer {
+    background: var(--black);
+    color: var(--gold);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* ========== Animations ========== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fallbackFadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.85; }
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .welcome-message {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .places-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-group {
+        width: 100%;
+    }
+    
+    .place-title {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+
+    body {
+        animation: none;
+        background-attachment: scroll;
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-message {
+        font-size: 1rem;
+    }
+    
+    .place-image-container {
+        height: 200px;
+    }
+    
+    .image-loading-spinner {
+        width: 40px;
+        height: 40px;
+        border-width: 4px;
+    }
+    
+    .image-error-banner {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .retry-image-btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce), (prefers-reduced-data: reduce) {
+    body {
+        animation: none !important;
+        background-attachment: scroll !important;
+        background-size: 100% 100% !important;
+    }
+    :is(
+        .place-card.fun,
+        .place-card[data-category*="ملاهي"],
+        .place-card[data-category*="حدائق ترفيهية"],
+        .place-card[data-category*="متنزهات"],
+        .place-card[data-category*="Zoo"],
+        .place-card[data-category*="حديقة الحيوان"],
+        .place-card[data-category*="حدائق حيوان"],
+        .place-card[data-category*="أكواريوم"]
+    ) .place-image {
+        animation: none !important;
+    }
+    * {
+        transition: none !important;
+    }
+}
+
+.image-fallback {
+    border: 2px dashed var(--red);
+    background: var(--gray-light);
+    filter: grayscale(0.5) brightness(0.95);
+    opacity: 0.85;
+    transition: border-color 0.3s;
+    animation: fallbackFadeIn 0.7s ease;
+    position: relative;
+}
+
+.image-loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 6px solid var(--gray-light);
+    border-top-color: var(--red);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.image-loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.image-error-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(221, 0, 0, 0.95), rgba(221, 0, 0, 0.85));
+    color: var(--white);
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    z-index: 15;
+    animation: slideUpFade 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.retry-image-btn {
+    background: var(--white);
+    color: var(--red);
+    border: 2px solid var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.retry-image-btn:hover {
+    background: var(--gold);
+    color: var(--black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 206, 0, 0.4);
+}
+
+.retry-image-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.place-image-container.loading {
+    background: var(--gray-light);
+    position: relative;
+}
+
+.place-image-container.error {
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffe0e0 100%);
+}

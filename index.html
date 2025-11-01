@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇩🇪🇧🇪 الأماكن السياحية والترفيهية في ألمانيا وبلجيكا</title>
+    <!-- SEO & Social Meta Tags -->
+    <meta name="description" content="دليل تفاعلي شامل لأهم الأماكن السياحية والترفيهية في ألمانيا وبلجيكا — معالم تاريخية، قصور، قلاع، ملاهي، حدائق ترفيهية، حدائق حيوان، أكواريوم ومتنزهات. اكتشف أفضل الوجهات مع صور ومعلومات موجزة.">
+    <meta name="keywords" content="ألمانيا, بلجيكا, سياحة, أماكن سياحية, أماكن ترفيهية, برلين, ميونخ, بروكسل, بروج, قصور, معالم, ملاهي, حدائق ترفيهية, حدائق حيوان, أكواريوم, Europa Park, Phantasialand">
+    <meta name="author" content="يونس">
+    <meta name="robots" content="index, follow">
+    <!-- TODO: استبدل YOUR_USERNAME باسم المستخدم الخاص بك على GitHub -->
+    <link rel="canonical" href="https://YOUR_USERNAME.github.io/germany-tourism/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="الأماكن السياحية والترفيهية في ألمانيا وبلجيكا — دليل مصور">
+    <meta property="og:description" content="دليل تفاعلي شامل لأهم المعالم السياحية والأماكن الترفيهية في ألمانيا وبلجيكا مع صور ومعلومات موجزة. تصفح بحسب المدينة أو الفئة.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://YOUR_USERNAME.github.io/germany-tourism/">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/800px-Brandenburger_Tor_abends.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="الأماكن السياحية والترفيهية في ألمانيا وبلجيكا">
+    <meta name="twitter:description" content="دليل تفاعلي شامل لأهم المعالم السياحية والأماكن الترفيهية في ألمانيا وبلجيكا مع صور ومعلومات موجزة.">
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/800px-Brandenburger_Tor_abends.jpg">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="welcome-banner">
+                <h1 class="main-title">🇩🇪🇧🇪 الأماكن السياحية والترفيهية في ألمانيا وبلجيكا</h1>
+                <p class="welcome-message">أهلاً أبو العباس في رحلاتك - تحياتي يونس</p>
+                <p class="subtitle">اكتشف المعالم التاريخية والأماكن الترفيهية في بلدين رائعين</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Search Section (citySearch, categorySearch, resetBtn) -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <div class="search-group">
+                    <label for="citySearch">🔍 البحث بالمدينة:</label>
+                    <input type="text" id="citySearch" placeholder="مثال: برلين، ميونخ، كولونيا...">
+                </div>
+
+                <div class="search-group">
+                    <label for="categorySearch">🏷️ البحث بالفئة:</label>
+                    <select id="categorySearch">
+                        <option value="">جميع الفئات</option>
+                        <option value="معالم تاريخية">معالم تاريخية</option>
+                        <option value="قصور">قصور</option>
+                        <option value="معالم دينية">معالم دينية</option>
+                        <option value="طبيعة">طبيعة</option>
+                        <option value="متاحف">متاحف</option>
+                        <option value="قلاع">قلاع</option>
+                        <option value="ساحات">ساحات</option>
+                        <option value="حدائق">حدائق</option>
+                        <option value="مدن تاريخية">مدن تاريخية</option>
+                        <option value="شواطئ">شواطئ</option>
+                        <option value="ملاهي">ملاهي 🎢</option>
+                        <option value="حدائق ترفيهية">حدائق ترفيهية 🎡</option>
+                        <option value="حدائق حيوان">حدائق حيوان 🦁</option>
+                        <option value="أكواريوم">أكواريوم 🐠</option>
+                        <option value="متنزهات">متنزهات 🎠</option>
+                    </select>
+                </div>
+
+                <div class="search-group">
+                    <button id="resetBtn" class="reset-btn">🔄 إعادة تعيين</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="placesCount" class="places-count"></div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>❌ لم يتم العثور على نتائج. جرب البحث بكلمات أخرى.</p>
+            </div>
+            <div id="placesGrid" class="places-grid"></div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 دليل السياحة في ألمانيا وبلجيكا | صُنع بـ ❤️ بواسطة يونس</p>
+            <p class="footer-note">جميع الصور من Wikimedia Commons</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
