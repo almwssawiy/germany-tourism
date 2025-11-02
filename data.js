@@ -285,7 +285,7 @@ const touristPlaces = [
         city: "دريسدن",
         category: "معالم دينية",
         description: "كنيسة باروكية لوثرية أعيد بناؤها بعد الحرب العالمية الثانية. رمز للمصالحة والسلام.",
-        imageUrl: "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1706252772283-f6fd79908020?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 51.0519, lng: 13.7414 }
     },
     {
@@ -303,7 +303,7 @@ const touristPlaces = [
         city: "شتوتغارت",
         category: "متاحف",
         description: "متحف يروي تاريخ السيارات من 1886 حتى اليوم. يعرض أكثر من 160 سيارة في مبنى حلزوني مبتكر.",
-        imageUrl: "https://images.unsplash.com/photo-1492144534651-1be6ee0379c3?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1579558449098-2bb4e1cfc3ed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 48.7886, lng: 9.2328 }
     },
     {
@@ -321,7 +321,7 @@ const touristPlaces = [
         city: "بروكسل",
         category: "ساحات",
         description: "الساحة المركزية في بروكسل وأحد أجمل الساحات في أوروبا. محاطة بمباني قوطية وباروكية مذهلة ومدرجة على قائمة التراث العالمي.",
-        imageUrl: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1669801721766-b4dd8be33f4e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=726",
         coordinates: { lat: 50.8467, lng: 4.3525 }
     },
     {
@@ -330,7 +330,7 @@ const touristPlaces = [
         city: "بروكسل",
         category: "معالم تاريخية",
         description: "نصب تذكاري على شكل ذرة حديد مكبرة 165 مليار مرة. بُني لمعرض إكسبو 1958 وأصبح رمز بروكسل.",
-        imageUrl: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1705759885469-ed74f535408a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1064",
         coordinates: { lat: 50.8950, lng: 4.3417 }
     },
     {
@@ -348,7 +348,7 @@ const touristPlaces = [
         city: "بروج",
         category: "مدن تاريخية",
         description: "مدينة قروسطية ساحرة تُلقب بـ'فينيسيا الشمال'. قنواتها المائية ومبانيها القوطية تجعلها من أجمل المدن الأوروبية.",
-        imageUrl: "https://images.unsplash.com/photo-1555993537-1542bf6e1b6d?auto=format&q=80&w=1200",
+        imageUrl: "https://plus.unsplash.com/premium_photo-1688466338520-214516689a1e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 51.2093, lng: 3.2247 }
     },
     {
@@ -357,7 +357,7 @@ const touristPlaces = [
         city: "بروج",
         category: "معالم تاريخية",
         description: "برج قوطي يبلغ ارتفاعه 83 متر مع 47 جرساً. يوفر إطلالة بانورامية على المدينة بعد صعود 366 درجة.",
-        imageUrl: "https://images.unsplash.com/photo-1603694087185-7fb0e9c0c3e3?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1682679605721-51fa2b68bcf6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=736",
         coordinates: { lat: 51.2083, lng: 3.2247 }
     },
     {
@@ -452,6 +452,7 @@ const touristPlaces = [
     }
 
 ];
+
 
 
 
