@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // رسالة ترحيب في console
-    console.log('%c🇩🇪 أهلاً أبو العباس في رحلاتك - تحياتي يونس', 
+    console.log('%c🇩🇪 أهلاً عبد الله الموسوي في رحلاتك - تحياتي يونس', 
                 'color: #FFCE00; font-size: 20px; font-weight: bold; background: #000; padding: 10px;');
     console.log('%cموقع الأماكن السياحية في ألمانيا', 
                 'color: #DD0000; font-size: 16px;');
@@ -403,4 +403,5 @@ document.addEventListener('DOMContentLoaded', () => {
         if (canonicalLink) canonicalLink.href = currentUrl;
         if (ogUrl) ogUrl.content = currentUrl;
     }
+
 });
