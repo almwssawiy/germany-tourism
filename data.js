@@ -114,7 +114,7 @@ const touristPlaces = [
         city: "آيزناخ",
         category: "قلاع",
         description: "قلعة تاريخية على قمة تل تعود للقرن الحادي عشر. مكان ترجم فيه مارتن لوثر الكتاب المقدس إلى الألمانية.",
-        imageUrl: "https://images.unsplash.com/photo-1606925797300-0b53e0e6a3a8?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1692820292489-dd9da5f90d94?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 50.9647, lng: 10.3119 }
     },
     {
@@ -123,7 +123,7 @@ const touristPlaces = [
         city: "بافاريا",
         category: "مدن تاريخية",
         description: "مدينة قروسطية محفوظة بشكل مثالي مع أسوار وأبراج كاملة. تبدو وكأنها خرجت من قصة خيالية بشوارعها المرصوفة بالحصى.",
-        imageUrl: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1715462068403-b9c0733df7fa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1548",
         coordinates: { lat: 49.3779, lng: 10.1786 }
     },
     {
@@ -132,7 +132,7 @@ const touristPlaces = [
         city: "بحر البلطيق",
         category: "شواطئ",
         description: "أكبر جزيرة ألمانية مع شواطئ رملية بيضاء وجروف طباشيرية مذهلة. وجهة صيفية شهيرة على ساحل بحر البلطيق.",
-        imageUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1734166042480-146e1fa975bd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=738",
         coordinates: { lat: 54.5264, lng: 13.3919 }
     },
     {
@@ -249,7 +249,7 @@ const touristPlaces = [
         city: "بادن فورتمبيرغ",
         category: "قلاع",
         description: "قلعة رائعة على قمة جبل، مقر عائلة هوهنتسولرن الملكية. تعد من أجمل القلاع في أوروبا.",
-        imageUrl: "https://images.unsplash.com/photo-1570824104453-508955ab713e?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1682346863550-231c809f4ef6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1064",
         coordinates: { lat: 48.3236, lng: 8.9672 }
     },
     {
@@ -452,6 +452,7 @@ const touristPlaces = [
     }
 
 ];
+
 
 
 
