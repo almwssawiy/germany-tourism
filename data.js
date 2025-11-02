@@ -420,7 +420,7 @@ const touristPlaces = [
         city: "بروكسل",
         category: "متنزهات",
         description: "حديقة مصغرة تحتوي على نماذج مصغرة لأشهر معالم أوروبا بمقياس 1:25. تضم أكثر من 350 مبنى.",
-        imageUrl: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1687734951918-c2be3962f259?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1770",
         coordinates: { lat: 50.8947, lng: 4.3414 }
     },
     {
@@ -429,7 +429,7 @@ const touristPlaces = [
         city: "غنت",
         category: "معالم تاريخية",
         description: "قنوات مائية تاريخية تمر عبر قلب المدينة القديمة. رحلات القوارب توفر منظوراً فريداً للمباني القروسطية.",
-        imageUrl: "https://images.unsplash.com/photo-1603726832877-8f3c85a02b3b?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1647613884463-104080b46629?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1770",
         coordinates: { lat: 51.0543, lng: 3.7174 }
     },
     {
@@ -452,6 +452,7 @@ const touristPlaces = [
     }
 
 ];
+
 
 
 
