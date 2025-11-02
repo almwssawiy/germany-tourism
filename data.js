@@ -42,7 +42,7 @@ const touristPlaces = [
         city: "برلين",
         category: "متاحف",
         description: "مجمع متاحف عالمي يضم خمسة متاحف رئيسية على جزيرة في نهر شبريه. يحتوي على كنوز أثرية من مختلف الحضارات.",
-        imageUrl: "https://images.unsplash.com/photo-1539037116277-4db20889f2d2?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1756298742503-53414de56f5d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 52.5169, lng: 13.4019 }
     },
     {
@@ -51,7 +51,7 @@ const touristPlaces = [
         city: "هايدلبرغ",
         category: "قلاع",
         description: "أطلال قلعة رومانسية تطل على نهر نيكار والمدينة القديمة. تجمع بين العمارة القوطية وعصر النهضة وتعد من أشهر الأطلال في ألمانيا.",
-        imageUrl: "https://images.unsplash.com/photo-1611435452681-c05c92b21f4e?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1638457496122-2386c167d768?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1548",
         coordinates: { lat: 49.4106, lng: 8.7153 }
     },
     {
@@ -60,7 +60,7 @@ const touristPlaces = [
         city: "ميونخ",
         category: "ساحات",
         description: "الساحة المركزية التاريخية في قلب ميونخ. تشتهر ببرجها الذي يحتوي على ساعة فلكية وأجراس موسيقية تعزف يومياً.",
-        imageUrl: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1577462281852-279bf4986f7b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1770",
         coordinates: { lat: 48.1374, lng: 11.5755 }
     },
     {
@@ -69,7 +69,7 @@ const touristPlaces = [
         city: "برلين",
         category: "معالم تاريخية",
         description: "نصب تذكاري لتاريخ ألمانيا المقسمة. الجزء المتبقي يُعرف بـ 'معرض الجانب الشرقي' ويحتوي على لوحات جدارية فنية شهيرة.",
-        imageUrl: "https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1591155654683-09555b9e1362?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1548",
         coordinates: { lat: 52.5058, lng: 13.4397 }
     },
     {
@@ -78,7 +78,7 @@ const touristPlaces = [
         city: "بوتسدام",
         category: "قصور",
         description: "قصر صيفي فخم بُني في القرن الثامن عشر لفريدريك الكبير. يُعرف بـ 'فرساي الألمانية' ويحيط به حدائق رائعة.",
-        imageUrl: "https://images.unsplash.com/photo-1544966503-7cc4ac65564d?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1591831603430-b5d0ce479afa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1770",
         coordinates: { lat: 52.4042, lng: 13.0386 }
     },
     {
@@ -87,7 +87,7 @@ const touristPlaces = [
         city: "راينلاند",
         category: "طبيعة",
         description: "منطقة خلابة مع قلاع قديمة وكروم عنب على ضفاف نهر الراين. أحد مواقع التراث العالمي وموطن أسطورة لوريلاي الشهيرة.",
-        imageUrl: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1761559261091-8b91d7689a06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1773",
         coordinates: { lat: 50.1, lng: 7.6 }
     },
     {
@@ -96,7 +96,7 @@ const touristPlaces = [
         city: "لوبيك",
         category: "معالم تاريخية",
         description: "بوابة مدينة قوطية من الطوب الأحمر تعود للقرن الخامس عشر. رمز مدينة لوبيك وأحد أشهر معالم شمال ألمانيا.",
-        imageUrl: "https://images.unsplash.com/photo-1570129473507-1c15f81c8b90?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1713630536286-1707aa426108?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1712",
         coordinates: { lat: 53.8655, lng: 10.6764 }
     },
     {
@@ -105,7 +105,7 @@ const touristPlaces = [
         city: "ميونخ",
         category: "حدائق",
         description: "واحدة من أكبر الحدائق الحضرية في العالم، أكبر من سنترال بارك في نيويورك. تحتوي على بحيرات وجداول ومعبد صيني.",
-        imageUrl: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1704709331195-0a068a888e68?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2670",
         coordinates: { lat: 48.1642, lng: 11.6056 }
     },
     {
@@ -452,6 +452,7 @@ const touristPlaces = [
     }
 
 ];
+
 
 
 
