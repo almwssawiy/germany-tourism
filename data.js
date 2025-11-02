@@ -222,7 +222,7 @@ const touristPlaces = [
         city: "سولتاو",
         category: "حدائق ترفيهية",
         description: "ثاني أكبر حديقة ترفيهية في ألمانيا. تشتهر بألعابها المثيرة مثل Colossos وKrake.",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1755714784061-583a1ccfdcef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1625",
         coordinates: { lat: 53.0236, lng: 9.8781 }
     },
     {
@@ -240,7 +240,7 @@ const touristPlaces = [
         city: "ميونخ",
         category: "قصور",
         description: "قصر صيفي باروكي فخم كان مقر إقامة حكام بافاريا. يحيط به حديقة واسعة على الطراز الإنجليزي.",
-        imageUrl: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1635697144529-7ee5c14286a1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1770",
         coordinates: { lat: 48.1583, lng: 11.5033 }
     },
     {
@@ -258,7 +258,7 @@ const touristPlaces = [
         city: "ميونخ",
         category: "متاحف",
         description: "متحف مخصص لتاريخ شركة BMW. يعرض سيارات ودراجات نارية كلاسيكية وحديثة في مبنى معماري مذهل.",
-        imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1699358969760-0895a58dcb66?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 48.1769, lng: 11.5589 }
     },
     {
@@ -276,7 +276,7 @@ const touristPlaces = [
         city: "فورتسبورغ",
         category: "قصور",
         description: "تحفة معمارية باروكية وأحد أجمل القصور في أوروبا. يحتوي على أكبر لوحة سقف في العالم رسمها تيبولو.",
-        imageUrl: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1740827637997-9b0349df221c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 49.7931, lng: 9.9364 }
     },
     {
@@ -393,7 +393,7 @@ const touristPlaces = [
         city: "بروكسل",
         category: "متاحف",
         description: "متحف تفاعلي يروي تاريخ الشوكولاتة البلجيكية الشهيرة. يتضمن عروض تحضير الشوكولاتة وتذوق مجاني.",
-        imageUrl: "https://images.unsplash.com/photo-1519869325930-2811486b3001?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1549007860-1927001d0502?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1035",
         coordinates: { lat: 50.8467, lng: 4.3542 }
     },
     {
@@ -402,7 +402,7 @@ const touristPlaces = [
         city: "بروكسل",
         category: "معالم تاريخية",
         description: "أكبر مبنى قضائي في العالم بُني في القرن التاسع عشر. تصميمه المعماري الضخم يهيمن على أفق المدينة.",
-        imageUrl: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1555776097-f21af260de55?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1035",
         coordinates: { lat: 50.8367, lng: 4.3511 }
     },
     {
@@ -438,7 +438,7 @@ const touristPlaces = [
         city: "أنتويرب",
         category: "معالم تاريخية",
         description: "واحدة من أجمل محطات القطار في العالم. تصميمها المعماري الفخم يجمع بين عدة أنماط من القرن العشرين.",
-        imageUrl: "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1625224817827-18e9988f8dfa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2694",
         coordinates: { lat: 51.2172, lng: 4.4214 }
     },
     {
@@ -447,11 +447,12 @@ const touristPlaces = [
         city: "وافر",
         category: "حدائق ترفيهية",
         description: "أكبر حديقة ترفيهية في بلجيكا مع أكثر من 40 لعبة مثيرة. تشتهر بألعاب الرولر كوستر المائية والجافة.",
-        imageUrl: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1750015504729-7560ed84d8f9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         coordinates: { lat: 50.6989, lng: 4.5917 }
     }
 
 ];
+
 
 
 
