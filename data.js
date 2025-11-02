@@ -24,7 +24,7 @@ const touristPlaces = [
         city: "كولونيا",
         category: "معالم دينية",
         description: "تحفة معمارية قوطية وأحد مواقع التراث العالمي لليونسكو. استغرق بناؤها أكثر من 600 عام وتعد من أطول الكنائس في العالم.",
-        imageUrl: "https://images.unsplash.com/photo-1600758208050-a22f17fc5e4b?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1752494330568-b9cb010762cb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1626",
         coordinates: { lat: 50.9413, lng: 6.9583 }
     },
     {
@@ -450,4 +450,5 @@ const touristPlaces = [
         imageUrl: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&q=80&w=1200",
         coordinates: { lat: 50.6989, lng: 4.5917 }
     }
+
 ];
