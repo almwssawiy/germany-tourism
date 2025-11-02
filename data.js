@@ -33,7 +33,7 @@ const touristPlaces = [
         city: "بادن فورتمبيرغ",
         category: "طبيعة",
         description: "منطقة طبيعية خلابة مشهورة بغاباتها الكثيفة وقراها الساحرة. موطن كعكة الغابة السوداء الشهيرة والساعات الخشبية التقليدية.",
-        imageUrl: "https://images.unsplash.com/photo-1590747356650-7a8a591b8b68?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1661710359883-01357f3deb9a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1770",
         coordinates: { lat: 48.3, lng: 8.15 }
     },
     {
@@ -452,5 +452,6 @@ const touristPlaces = [
     }
 
 ];
+
 
 
