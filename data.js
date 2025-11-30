@@ -141,7 +141,7 @@ const touristPlaces = [
         city: "روست",
         category: "حدائق ترفيهية",
         description: "أكبر حديقة ترفيهية في ألمانيا وثاني أكبر منتزه في أوروبا. يحتوي على أكثر من 100 لعبة وعرض موزعة على 18 منطقة أوروبية مختلفة.",
-        imageUrl: "https://images.unsplash.com/photo-1567486157993-99b4c7a4e9c6?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1548701762-f976430363b1?q=80&w=2230&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         coordinates: { lat: 48.2662, lng: 7.7217 }
     },
     {
@@ -150,7 +150,7 @@ const touristPlaces = [
         city: "برول",
         category: "حدائق ترفيهية",
         description: "حديقة ترفيهية عالمية المستوى تشتهر بألعابها المثيرة وعوالمها الموضوعية المذهلة مثل Klugheim وChina Town.",
-        imageUrl: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1603707112961-46e6a1ee5ba7?q=80&w=2231&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         coordinates: { lat: 50.7989, lng: 6.8797 }
     },
     {
@@ -452,6 +452,7 @@ const touristPlaces = [
     }
 
 ];
+
 
 
 
