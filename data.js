@@ -366,7 +366,7 @@ const touristPlaces = [
         city: "غنت",
         category: "قلاع",
         description: "قلعة قروسطية محفوظة بشكل رائع من القرن الثاني عشر. تحتوي على متحف للأسلحة وغرف تعذيب تاريخية.",
-        imageUrl: "https://images.unsplash.com/photo-1560693753-8ac5a0ae3dc6?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1752325265308-6e874425970d?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         coordinates: { lat: 51.0575, lng: 3.7203 }
     },
     {
@@ -375,7 +375,7 @@ const touristPlaces = [
         city: "أنتويرب",
         category: "معالم دينية",
         description: "أكبر كنيسة قوطية في بلجيكا وأحد مواقع التراث العالمي. تحتوي على لوحات لروبنز وبرج يبلغ ارتفاعه 123 متر.",
-        imageUrl: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&q=80&w=1200",
+        imageUrl: "https://images.unsplash.com/photo-1741218333159-85a1447e7eaf?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         coordinates: { lat: 51.2203, lng: 4.4014 }
     },
     {
@@ -452,6 +452,7 @@ const touristPlaces = [
     }
 
 ];
+
 
 
 
